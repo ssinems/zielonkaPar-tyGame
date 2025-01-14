@@ -1,1 +1,1 @@
-# zielonkaPar-tyGame
+# zielonkaParityGame
