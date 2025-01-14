@@ -6,16 +6,19 @@ Overview
 This project is focused on analyzing an HOA (High-level Automaton) file using the Spot library and implementing Zielonka’s algorithm for solving parity games. The script reads an HOA file, extracts controllable atomic propositions (APs), and applies Zielonka’s algorithm to determine the winning regions and strategies for both players based on the automaton’s priorities.
 
 Requirements
+
 	•	Python 3.x
 	•	Spot library: Install it using pip install spot (or follow Spot’s installation instructions if needed).
 	•	A file containing the automaton in HOA format (e.g., .gm.bz2.ehoa).
 
 File Structure
+
 	•	parse_controllable_ap.py: Contains functions for parsing controllable APs from the HOA file.
 	•	zielonka_algorithm.py: Implements Zielonka’s algorithm for solving parity games using the automaton’s state transitions and priorities.
 	•	main.py: The main script that loads the HOA file, processes the automaton, and runs the algorithm.
 
 How It Works
+
 	1.	Parsing Controllable APs: The script extracts the controllable APs from the HOA file, which define the atomic propositions relevant to the automaton.
 	2.	Loading Automaton: The HOA file is read and the automaton is loaded using the Spot library. The script assumes that the file contains a single automaton.
 	3.	Zielonka’s Algorithm:
